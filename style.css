@@ -1,0 +1,130 @@
+/*stylesheet*/
+
+/************FONTS************/
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v19/KFOkCnqEu92Fr1MmgVxIIzI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color: grey;
+	display: flex;
+	flex-direction: column;
+}
+/************Nav Bar************/
+nav {
+	height: 100vh;
+	width: 5vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	z-index: 1;
+}
+
+nav img {
+	height: 10px;
+	width: 10px;
+	margin: 10px;
+	position: relative;
+	top: 10px;
+}
+
+
+.selected {
+	height: 20px;
+	width: 20px;
+}
+/************DIVIINTY LOGO CENTER************/
+.logo {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo h1 {
+	display: flex;
+	border: 1px solid grey;
+	padding: 1% 1% 1% 2%;
+	text-align: center;
+	font-family: Roboto;
+	text-transform: uppercase;
+	letter-spacing: 13px;
+	font-size: 65px;
+	font-weight: 575;
+
+}
+
+.logo-underline {
+	display: flex;
+	position: relative;
+	bottom: 10px;
+	border-top: 1px solid grey;
+	height: 1px;
+	width: 300px;
+	transition: all 0.5s
+}
+
+.logo h1:hover + .logo-underline {
+	width: 30px;
+}
+
+.logo h1:hover {
+	cursor: pointer;
+}
+
+.logo-underline, .logo h1 {
+
+}
+/************TRIPLE DOTS************/
+
+/************ABOUT************/
+
+.about {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+	font-family: Roboto;
+	font-weight: lighter;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-title {
+	position: absolute;
+	top: 0;
+	letter-spacing: 3px;
+	margin-top: 10px;
+}
+.about-title h1 {
+
+}
+.about-title img {
+	height: 10px;
+	width: 10px;
+	margin-right: 15px;
+	margin-bottom: 7px;
+}
+
+.about-text {
+	display: border-box;
+	width: 35vw;
+	font-size: 30px;
+	padding: 2%;
+	text-align: left;
+}
